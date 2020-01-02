@@ -53,4 +53,5 @@ public class Product {
     this.state = state;
     this.type = type;
   }
+
 }

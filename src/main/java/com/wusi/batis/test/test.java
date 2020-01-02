@@ -22,11 +22,13 @@ public class test {
     private ProductMapper ProductMapper;
     @Test
     public void  testSelect(){
-       List<Product> list=ProductMapper.selectList(null);
+      // List<Product> list=ProductMapper.selectList(null);
      /*   for(Product pro:list){
             System.out.println(pro.getUrl());
         }*/
-       Product pro=ProductMapper.selectById(99);
-        System.out.println(pro.getState());
+     String a="广东省";
+        System.out.println(a.substring(0, a.length()-1));
+       //Product pro=ProductMapper.selectById(99);
+       // System.out.println(pro.getState());
     }
 }

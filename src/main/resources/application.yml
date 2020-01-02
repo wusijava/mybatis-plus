@@ -23,11 +23,20 @@ spring:
         url-pattern: '/*'
         exclusions: '*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*'
         session-stat-enable: true
-
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1MB
+      max-request-size: 10MB
+      location: /img
+upload:
+  picturepath: D:/img/
 
 
 server:
-  port: 8081
+  port: 8666
 
 mybatis:
   mapper-locations: classpath:com/wusi/batis/mapper/*Mapper.xml
+  #默认图片大小超过1mb就不可以上传，可以如下更改
+
